@@ -1,0 +1,407 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.topnav {
+  height: 3.9vh;
+  background-color: rgb(90, 101, 84);
+  border-radius: 3px;
+  border-top: 0%;
+  margin: auto;
+  padding: 5px;
+  box-shadow: 8px 10px 18px rgb(87, 99, 91);
+}
+
+.topnav i {
+  float: left;
+  display: block;
+  color: azure;
+  text-align: center;
+  justify-content: center;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 2px;
+  font-weight: bold;
+  margin: 0px 3px;
+  box-shadow: 5px 10px 18px black;
+}
+
+.topnav i:hover {
+  color: rgb(182, 23, 84);
+  border-radius: 5px;
+  box-shadow: 5px 10px 15px rgb(33, 34, 34);
+  opacity: 0.5;
+}
+
+.topnav i .active {
+  background-color: rgb(235, 116, 209);
+  color: white;
+}
+/* use darkmode */
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+
+.heading {
+  text-align: center;
+  color: rgb(125, 132, 231);
+  text-transform: capitalize;
+  font-weight: bold;
+  padding: 10px;
+}
+
+form {
+  border: 3px;
+  margin: 5px;
+}
+
+.container_2 {
+  padding: 5px;
+  border-radius: 5px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(93, 113, 105, 0.265);
+  box-shadow: 8px 10px 18px rgb(141, 147, 137);
+}
+
+input[type=text],
+input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0px;
+  box-sizing: border-box;
+  box-shadow: 8px 15px 18px rgb(90, 101, 84);
+}
+
+.login_button {
+  background-color: rgb(90, 101, 85);
+  color: azure;
+  padding: 5px;
+  margin: 8px 0;
+  cursor: pointer;
+  border: 2px solid rgb(90, 101, 84);
+  border-radius: 5px;
+  box-shadow: 5px 10px 18px rgb(90, 101, 84);
+
+}
+
+.login_button:hover {
+  background-color: rgb(182, 23, 84);
+  border: 2px solid rgb(182, 23, 84);
+}
+
+
+button:hover {
+  opacity: 0.8;
+  background-color: red;
+  color: azure;
+  box-shadow: 5px 10px 18px rgb(90, 101, 84);
+
+}
+
+.cancel_button {
+  width: fit-content;
+  padding: 5px;
+  background-color: rgb(231, 108, 108);
+  margin: 3px;
+  border-radius: 5px;
+
+}
+
+/* use icon */
+.icon {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+.travelphoto {
+  border-image: 20px;
+  width: 100px;
+}
+
+span.password {
+  float: right;
+  padding-top: 16px;
+  text-decoration: none;
+  color: black;
+}
+
+button a {
+  text-decoration: none;
+  color: rgb(18, 18, 19);
+}
+
+@media screen and (max-width: 500px) {
+  .container2 {
+    padding: 35px;
+  }
+}
+
+ /* use bio image */
+.security_pic_bio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.security_pic_bio img {
+  width: 50%;
+  height: 60vh;
+}
+.security_pic_bio p{
+  font-size:medium;
+  font-style: oblique;
+  color: rgb(90, 101, 84);
+}
+@media screen and (max-width: 900px) {
+  .security_pic_bio {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .security_pic_bio img {
+    width: 80%;
+  }
+}
+
+
+
+/* i have used bottstrap */
+
+.site-footer {
+  background-color: rgb(90, 101, 84);
+  padding: 45px 0 20px;
+  font-size: 15px;
+  line-height: 24px;
+  color: azure;
+  border-radius: 5px;
+}
+
+.site-footer hr {
+  border-top-color: #bbb;
+  opacity: 0.5
+}
+
+.site-footer hr.small {
+  margin: 20px 0
+}
+
+.site-footer h6 {
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing: 2px
+}
+
+.site-footer a {
+  color: #737373;
+}
+
+.site-footer a:hover {
+  color: rgb(182, 23, 84);
+  text-decoration: none;
+}
+
+.footer-links {
+  padding-left: 0;
+  list-style: none;
+}
+
+.footer-links li {
+  display: block;
+}
+
+.footer-links a {
+  color: azure;
+  text-decoration: none;
+}
+
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+  color: rgb(248, 20, 107);
+  text-decoration: none;
+}
+
+.footer-links.inline li {
+  display: inline-block
+}
+
+.site-footer .social-icons {
+  text-align: right
+}
+
+.site-footer .social-icons a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 6px;
+  margin-right: 0;
+  border-radius: 100%;
+  background-color: rgb(42, 45, 40);
+  color: azure;
+}
+
+.copyright-text {
+  margin: 0
+}
+
+@media (max-width:991px) {
+  .site-footer [class^=col-] {
+    margin-bottom: 30px
+  }
+}
+
+@media (max-width:767px) {
+  .site-footer {
+    padding-bottom: 0
+  }
+
+  .site-footer .copyright-text,
+  .site-footer .social-icons {
+    text-align: center
+  }
+}
+
+.social-icons {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-bottom: 4px
+}
+
+.social-icons li.title {
+  margin-right: 15px;
+  text-transform: uppercase;
+  color: azure;
+  font-weight: 700;
+  font-size: 13px
+}
+
+.social-icons a {
+  background-color: #79a9c1;
+  color: azure;
+  font-size: 16px;
+  display: inline-block;
+  line-height: 44px;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  margin-right: 8px;
+  border-radius: 100%;
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear
+}
+
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+  color: white;
+  background-color: #29fefe
+}
+
+.social-icons.size-sm a {
+  line-height: 34px;
+  height: 34px;
+  width: 34px;
+  font-size: 14px
+}
+
+.social-icons a.facebook:hover {
+  background-color: #3b5998
+}
+
+.social-icons a.twitter:hover {
+  background-color: #00aced
+}
+
+.social-icons a.linkedin:hover {
+  background-color: #007bb6
+}
+
+.social-icons a.youtube:hover {
+  background-color: #a3141b
+}
+
+.social-icons a.instagram:hover {
+  background-color: #ac7ba8
+}
+
+.social-icons a.whatsapp:hover {
+  background-color: #17743c
+}
+
+@media (max-width:767px) {
+  .social-icons li.title {
+    display: flex;
+    margin-right: 0;
+    font-weight: 600;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* bootstrap code */
+.navbar-toggler a {
+  color: azure;
+  box-shadow: 5px 10px 18px rgb(44, 45, 42);
+  margin: 5px;
+  font-size: 20px;
+}
+
+.navbar-toggler a:hover {
+  color: rgb(242, 35, 114);
+}
+
+/* use the admin dassboard  */
+#box_item {
+  flex-wrap: wrap;
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 8px 10px 18px rgb(90, 101, 85);
+  background-color: rgb(244, 247, 247);
+
+}
+
+.box_item_name {
+  border: 2px solid;
+  border-radius: 5px;
+  background-color: rgb(90, 101, 84);
+  color: azure;
+  align-items: center;
+  padding: 40px;
+  margin: 5px;
+  box-shadow: 8px 10px 18px rgb(90, 101, 85);  
+}
+/* style profile id  */
+.nav-item li a{
+  color: azure;
+}
+.nav-item li a:hover{
+  background-color: azure;
+  color: rgb(90, 101, 84);
+  border-radius: 5px;
+}

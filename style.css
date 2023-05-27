@@ -1,0 +1,724 @@
+* {
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.topnav {
+  width: 100%;
+  height: 4.9vh;
+  background-color: rgb(90, 101, 84);
+  border-radius: 3px;
+  margin: auto;
+  padding: 5px;
+  box-shadow: 8px 10px 18px rgb(87, 99, 91);
+}
+
+.topnav i {
+  float: left;
+  display: block;
+  color: azure;
+  text-align: center;
+  justify-content: center;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 10px;
+  border-radius: 2px;
+  margin: 0px 3px;
+  box-shadow: 5px 10px 18px black;
+}
+
+.topnav i:hover {
+  background-color: rgb(182, 23, 84);
+  color: azure;
+  border-radius: 5px;
+  box-shadow: 5px 10px 15px rgb(33, 34, 34);
+  opacity: 0.5;
+}
+
+.topnav i .active {
+  background-color: rgb(235, 116, 209);
+  color: white;
+}
+
+form {
+  border-color: rgb(90, 101, 85);
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+
+}
+
+.container2 {
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 8px 10px 18px rgb(141, 147, 137);
+  background-color: rgba(93, 113, 105, 0.265);
+  width: 100px 50px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.icon {
+  text-align: center;
+}
+
+h1 {
+  color: rgb(247, 60, 163);
+}
+
+/* use for bvutton */
+button {
+  background-color: rgb(155, 247, 125);
+  padding: 5px 10px;
+  margin: 8px 0;
+  cursor: pointer;
+  border-radius: 2px;
+  font-size: large;
+  border: 1px;
+  box-shadow: 5px 10px 18px #3c4043;
+}
+
+button:hover {
+  opacity: 0.8;
+  background-color: red;
+  color: azure;
+}
+
+button a {
+  text-decoration: none;
+  color: rgb(18, 18, 19);
+}
+
+/* use darkmode */
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+/* change_content */
+.change_content::after {
+  content: '';
+  animation: changetext 8s infinite linear;
+  color: rgb(75, 87, 56);
+  font-size: large;
+  text-shadow: 8px 10px 15px rgb(87, 99, 91);
+}
+
+@keyframes changetext {
+  0% {
+    content: " Study";
+  }
+
+  10% {
+    content: "Change future ";
+  }
+
+  20% {
+    content: "Make a life";
+  }
+
+  30% {
+    content: "Make a frofessional";
+  }
+
+}
+
+section {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+
+/* use login option  */
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=number] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+
+.login_button,
+.logged_button {
+  background-color: rgb(90, 101, 84);
+  color: white;
+  padding: 10px 15px;
+  margin: 8px 0;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+  border: 2px solid rgb(90, 101, 84);
+  box-shadow: 8px 10px 18px rgb(90, 101, 84);
+}
+
+.logged_button:hover,
+.login_button:hover {
+  opacity: 0.8;
+  color: azure;
+  background-color: rgb(182, 23, 84);
+}
+
+#link_button i:hover {
+  opacity: 0.8;
+  color: azure;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: rgb(182, 23, 84);
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+  border-radius: 5px;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 100px;
+  border-radius: 15px;
+  margin: 3px;
+}
+
+.container {
+  padding: 10px;
+  width: 100%;
+}
+
+span.psw {
+  float: right;
+  padding: 2px;
+}
+
+span.psw a:hover {
+  color: red;
+  opacity: 0.8;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  background-color: rgba(105, 108, 107, 0.986);
+  padding-top: 60px;
+}
+
+/* use the content login popup button */
+.sub_contain {
+  background-color: gainsboro;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  margin: 5% auto 15% auto;
+  width: 50%;
+}
+
+.model_box {
+  background-color: rgb(48, 56, 56);
+  padding: 5px;
+  border-radius: 7px;
+  margin: 2px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: azure;
+  border: 2px solid;
+  border-radius: 5px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.5s;
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0)
+  }
+
+  to {
+    -webkit-transform: scale(1)
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+/* use slideimage */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 1.4s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 11px
+  }
+}
+
+/* smartphone response /////////////view the display*/
+/* .smartphone {
+  position: relative;
+  width: 350px;
+  height: 620px;
+  margin: auto;
+  border: 16px black solid;
+  border-top-width: 60px;
+  border-bottom-width: 60px;
+  border-radius: 36px;
+} */
+
+/* The horizontal line on the top of the device */
+/* .smartphone:before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 5px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 10px;
+} */
+
+/* The circle on the bottom of the device */
+/* .smartphone:after {
+  content: '';
+  display: block;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 50%;
+  bottom: -65px;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 50%;
+}
+
+.smartphone .content {
+  width: 330px;
+  height: 510px;
+  background: white;
+} */
+
+/* @media screen and {
+  (max-width: 300px;) 
+    .smartphone .content {
+      width: 220px;
+      height: 300px;
+      background: white;
+    }
+  
+} */
+.line {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  color: rgb(66, 71, 56);
+}
+
+/* style a footer///////// */
+.site-footer {
+  background-color: rgb(90, 101, 84);
+  padding: 45px 0 20px;
+  font-size: 15px;
+  line-height: 24px;
+  color: azure;
+  border-radius: 5px;
+}
+
+.site-footer hr {
+  border-top-color: #bbb;
+  opacity: 0.5
+}
+
+.site-footer hr.small {
+  margin: 20px 0
+}
+
+.site-footer h6 {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing: 2px
+}
+
+.site-footer a {
+  color: #737373;
+}
+
+.site-footer a:hover {
+  color: rgb(182, 23, 84);
+  text-decoration: none;
+}
+
+.footer-links {
+  padding-left: 0;
+  list-style: none;
+}
+
+.footer-links li {
+  display: block;
+}
+
+.footer-links a {
+  color: azure;
+  text-decoration: none;
+}
+
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+  color: #57e1d5;
+  text-decoration: none;
+}
+
+.footer-links.inline li {
+  display: inline-block
+}
+
+.site-footer .social-icons {
+  text-align: right
+}
+
+.site-footer .social-icons a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 6px;
+  margin-right: 0;
+  border-radius: 100%;
+  background-color: rgb(42, 45, 40);
+  color: azure;
+}
+
+.copyright-text {
+  margin: 0
+}
+
+@media (max-width:991px) {
+  .site-footer [class^=col-] {
+    margin-bottom: 30px
+  }
+}
+
+@media (max-width:767px) {
+  .site-footer {
+    padding-bottom: 0
+  }
+
+  .site-footer .copyright-text,
+  .site-footer .social-icons {
+    text-align: center
+  }
+}
+
+.social-icons {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-bottom: 4px
+}
+
+.social-icons li.title {
+  margin-right: 15px;
+  text-transform: uppercase;
+  color: azure;
+  font-weight: 700;
+  font-size: 13px
+}
+
+.social-icons a {
+  /* background-color:#79a9c1; */
+  color: azure;
+  font-size: 16px;
+  display: inline-block;
+  line-height: 44px;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  margin-right: 8px;
+  border-radius: 100%;
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear
+}
+
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+  color: white;
+  background-color: #29fefe
+}
+
+.social-icons.size-sm a {
+  line-height: 34px;
+  height: 34px;
+  width: 34px;
+  font-size: 14px
+}
+
+.social-icons a.facebook:hover {
+  background-color: #3b5998
+}
+
+.social-icons a.twitter:hover {
+  background-color: #00aced
+}
+
+.social-icons a.linkedin:hover {
+  background-color: #007bb6
+}
+
+.social-icons a.youtube:hover {
+  background-color: #a3141b
+}
+
+.social-icons a.instagram:hover {
+  background-color: #ac7ba8
+}
+
+.social-icons a.whatsapp:hover {
+  background-color: #17743c
+}
+
+@media (max-width:767px) {
+  .social-icons li.title {
+    display: flex;
+    margin-right: 0;
+    font-weight: 600;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* bootstrap code */
+/* .navbar-toggler a{
+  color: azure;
+  box-shadow: 5px 10px 18px rgb(44, 45, 42);
+  margin: 5px;
+  font-size: 20px;
+}
+.navbar-toggler a:hover{
+  color: rgb(186, 186, 131);
+} */
+.nav-item a {
+  background-color: rgba(90, 101, 84, 0.139);
+}
+
+category {
+  padding: 10px;
+  margin: 10px;
+}
+
+category a {
+  font-size: 18px;
+}
+
+category i:hover {
+  opacity: 0.8;
+  color: rgb(248, 249, 249);
+  background-color: rgb(2, 52, 47);
+  padding: 3px;
+  border-radius: 5px;
+
+}
+
+/* use dovlop image */
+.container .box {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.container .box .body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: 0.9s ease;
+}
+
+
+
+.container .box .body .imgContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+
+.container .box .body .imgContainer img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 2px 5px 10px rgb(90, 101, 85);
+}
+
+.container .box .body .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(240, 255, 255, 0.626);
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transform: rotateY(180deg);
+}
+
+.container .box:hover .body {
+  transform: rotateY(180deg);
+}
+
+.container .box .body .content div {
+  transform-style: preserve-3d;
+  padding: 20px;
+  background: linear-gradient(30deg, rgb(193, 208, 208), rgb(90, 101, 85));
+  transform: translateZ(100px);
+  border-radius: 5px;
+}
+
+.container .box .body .content div h3 {
+  letter-spacing: 1px;
+}

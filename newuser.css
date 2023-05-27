@@ -1,0 +1,110 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-image: url('/images/background/book.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3px;
+}
+html{
+    scroll-behavior: smooth;
+}
+.topnav{
+    /* overflow: hidden; */
+    height: 3.9vh;
+    background-color: rgb(90, 101, 84);
+    border-radius: 3px;
+    border-top: 0%;
+    margin: auto;
+    padding: 5px;
+    /* box-shadow: 8px 10px 18px rgb(87, 99, 91); */
+}
+.topnav i {
+    float: left;
+     display: block;
+     color: azure;
+     text-align: center;
+     justify-content: center;
+     padding: 5px;
+     text-decoration: none;
+     font-size: 20px;
+     border-radius: 2px;
+     font-weight: bold;
+     margin: 0px 3px;
+     box-shadow: 5px 10px 18px black;
+}
+.topnav i:hover{
+    color: rgb(0, 255, 255);;
+    border-radius: 5px;
+    box-shadow: 5px 10px 15px rgb(33, 34, 34);
+    opacity: 0.5;
+}
+.topnav i .active{
+    background-color: rgb(235, 116, 209);
+    color: white;
+}
+.heading{
+    color: rgb(81, 132, 148);
+    text-transform: capitalize;
+    font-weight: bold;
+    /* background-color:rgb(229, 226, 228); */
+    /* border-radius: 10px; */
+    /* border: 2px solid; */
+    padding: 10px;
+    }
+    form{
+        border: 3px;
+        margin: 5px;
+    }
+    .container2{
+        border: 0;
+        border-radius: 5px;
+        box-shadow: 8px 10px 18px rgb(141, 147, 137);
+        background-color: rgb(239, 239, 239);
+        /* padding: 20%; */
+        width: 100px 50px;
+    }
+    
+    input[type=text],
+    input[type=password],
+    input[type=email],
+    input[type=date],
+    input[type=tel]{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0px;
+        display: inline-block;
+        border: 1px solid;
+        box-sizing: border-box;
+        box-shadow: 8px 15px 18px rgb(128, 135, 142);
+    }
+    button{
+        background-color:rgb(217, 220, 216);
+        color: rgb(22, 17, 17);
+        padding: 14px 20px;
+        margin: 8px 0;
+        cursor: pointer;
+        width: 100%; 
+        border-radius: 6px;
+        border-bottom: 1px solid;
+        box-shadow: 8px 10px 18px rgb(109, 120, 104);
+    }
+    button:hover{
+        opacity: 0.8;
+        background-color: rgb(124, 124, 196);
+        box-shadow: 5px 10px 18px #414e4b;
+    }
+    /* for icon */
+    .travelphoto{
+        width: 100px;
+
+    }
+    .icon{
+        text-align: center;
+        margin: 24px 0 12px 0;
+    }
+    @media screen and (max-width: 500px) {
+        .container2 {
+            padding: 35px;
+        }
+    
+    }

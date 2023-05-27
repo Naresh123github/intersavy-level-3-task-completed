@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="/images/icon/lib8.png" type="png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bca</title>
+    <link rel="stylesheet" href="/images/icon/lib 8 small.png">
+    <link rel="stylesheet" href="/bca.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- create a navbar -->
+    <nav class="navbar bg-light fixed-top">
+        <div style="box-shadow:5px 10px 15px rgb(57, 69, 51); background-color:rgb(90,101,85); border-radius: 5px;"
+            class="container-fluid">
+            <a class="navbar-brand" href="#"><i style="font-size: 30px;" class="fa fa-home" aria-hidden="true"></i></a>
+            <button style="color: azure; background-color: azure; " class="navbar-toggler" type="button"
+                data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div style="background-color: rgba(220,220,220);" class="offcanvas offcanvas-end" tabindex="-1"
+                id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="/images/icon/lib 8 small.png" style="border-radius: 10px;"
+                            alt=""></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+
+                            <!-- dark-mode -->
+                            <i onclick="myFunction()" class="fa fa-moon-o"
+                                style="font-size: 30px; border: 2px solid; border-radius: 7px; padding: 3px;" aria-hidden="true"></i>
+                            <script>
+                                function myFunction() {
+                                    var element = document.body;
+                                    element.classList.toggle("dark-mode");
+                                }
+                            </script>
+                            <!-- end dark mode -->
+                            <a class="nav-link active" aria-current="page" href="#"><i class="fa fa-home"
+                                    aria-hidden="true"></i>Home</a>
+                            <a class="nav-link active" aria-current="page" href="/profilecard.html"><i
+                                    class="fa fa-user-md" aria-hidden="true"></i> profile</a>
+                            <a class="nav-link active" aria-current="page" href="/databio/indexdata.html"><i
+                                    class="fa fa-user-md" aria-hidden="true"></i> skils</a>
+                            <a class="nav-link active" aria-current="page" href="#"><i class="fa fa-globe"
+                                    aria-hidden="true"></i> services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-link" aria-hidden="true"></i> Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false"><i class="fa fa-dropdown" aria-hidden="true"></i>
+                                profile options
+                            </a>
+                            <ul style="background-color: rgb(60, 69, 55);box-shadow:5px 10px 18px rgb(90,101,85); " class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#"><i class="fa fa-user" aria-hidden="true"></i>
+                                    Profile</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="fa fa-cog" aria-hidden="true"></i>
+                                    Setting</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>
+                                    Logout</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#"><i class="fa fa-info" aria-hidden="true"></i>
+                                    more</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <br><br><br><br>
+
+    <!-- create a sidebar -->
+    <!-- <div id="myNav" class="slider">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="slider-content"> -->
+
+
+    <!-- <a href="#"><i style="" class="fa fa-info" aria-hidden="true"> About</i></a>
+            <a href="/profilecard.html"><i class="fa fa-user-md" aria-hidden="true"></i> profile</a>
+            <a href="/databio/indexdata.html"><i class="fa fa-user-md" aria-hidden="true"></i> skill data</a>
+            <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i> help</a>
+            <a href="#"><i class="fa fa-globe" aria-hidden="true"></i> services</a>
+            <a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> logout</a>
+
+        </div>
+    </div> -->
+
+    <!-- end of sidebar -->
+
+    <!-- <header>
+        <div class="container">
+            <div class="topnav"> -->
+
+    <!-- menu bar -->
+    <!-- <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i style="float: right;"
+                        class="fa fa-bars" aria-hidden="true"></i></span>
+                <script>
+                    function closeNav() {
+                        document.getElementById("myNav").style.width = "0%";
+                    }
+
+                    function openNav() {
+                        document.getElementById("myNav").style.width = "100%";
+                    }
+                </script> -->
+    <!-- end  -->
+
+    <!-- <a href="/mainfront.html"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+                <a href="/mainfront.html"><i class="fa fa-home" aria-hidden="true"></i></a>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-sticky-note" aria-hidden="true"></i> -->
+
+    <!-- create a notification bell -->
+    <!-- <div id="mybell" class="slider" style="height: 100%;
+                width: 30%;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                /* background-color: rgb(0,0,0); */
+                background-color:rgba(123, 132, 118, 0.888);
+                overflow-x: hidden;
+                transition: 0.5s;">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closebell()">&times;</a>
+                    <div class="slider-content"> -->
+    <!-- <a href="#"><i class="fa fa-bell-o" aria-hidden="true"></i></a> -->
+    <!-- <div class="bellicon">
+                            <h4>Notifications</h4>
+                        </div> -->
+    <!-- write any content -->
+    <!-- <br>
+                        <div class="sms_alert">
+                            <span class="clsbtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                            <strong>dear sir!</strong>i want web programming books!!!!.
+                        </div>
+                        <br>
+                        <div class="sms_alert">
+                            <span class="clsbtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                            <strong>dear sir!</strong>i want web programming books!!!!.
+                        </div>
+                        <br>
+                        <div class="sms_alert">
+                            <span class="clsbtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                            <strong>dear sir!</strong>i want web programming books!!!!.
+                        </div>
+                        <br>
+                        <div class="sms_alert">
+                            <span class="clsbtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                            <strong>dear sir!</strong>i want web programming books!!!!.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="number">3</div>
+                <span style="font-size:30px;cursor:pointer" onclick="openbell()"> <i style="float: right;"
+                        class="fa fa-bell-o" aria-hidden="true"></i>
+                    <script>
+                        function openbell() {
+                            document.getElementById("mybell").style.width = "100%";
+                        }
+
+                        function closebell() {
+                            document.getElementById("mybell").style.width = "0%";
+                        }
+                    </script>
+
+            </div>
+    </header> -->
+    <h1><i class="fa fa-graduation-cap" aria-hidden="true"></i> BCA</h1>
+    <div class="topnav">
+        <i class="fa fa-book" aria-hidden="true"></i>
+        <i style="float: right;" class="fa fa-search" aria-hidden="true"></i>
+        <input id="search" style="float: right;width: 130px; height: 4vh;" type="search" placeholder="Search..">
+    </div>
+    <!-- use for book containers -->
+    <br>
+    <div id="bookcontainer">
+        <div class="card">
+            <img src="/images/background/bookimages/ads.jpg" alt="ads book " style="width:100%;height: 25vh;">
+            <h3>advance data structure</h3>
+            <strong class="price">free</strong>
+            <label for="star"><span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-o"></span>
+                <span class="fa fa-star-o"></span></label>
+            <p> Lorem jeamsun denim lorem jeansum.
+            </p>
+            <p><button><a href="/books/advance data structure.pdf">view & download <i class="fa fa-download"
+                            aria-hidden="true"></i>
+                    </a></button></p>
+        </div>
+        <br>
+        <div class="border_line"></div>
+        <div class="card">
+            <img src="/images/background/bookimages/dsa.jpg" alt="dsa book" style="width:100%;height: 25vh;">
+            <h3>Data structure & algorithms</h3>
+            <strong class="price">free</strong>
+            <label for="star"><span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-half-o"></span>
+                <span class="fa fa-star-o"></span></label>
+            <p>Lorem jeamsun denim lorem jeansum.
+            </p>
+            <p><button><a href="/books/dsa.pdf">view & download <i class="fa fa-download" aria-hidden="true"></i>
+                    </a></button></p>
+        </div>
+        <br>
+        <div class="border_line"></div>
+        <div class="card">
+            <img src="/images/background/bookimages/c.jpg" alt="c book" style="width:100%;height: 25vh;">
+            <h3>lets us c</h3>
+            <strong class="price">free</strong>
+            <label for="star">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-o"></span>
+                <span class="fa fa-star-o"></span></label>
+            <p>Lorem jeamsun denim lorem
+                jeansum.
+            </p>
+            <p><button><a href="/books/c.pdf">view & download <i class="fa fa-download" aria-hidden="true"></i>
+                    </a></button></p>
+        </div>
+        <br>
+        <div class="border_line"></div>
+        <div class="card">
+            <img src="/images/background/bookimages/c++.jpg" alt="c++ book" style="width:100%;height: 25vh;">
+            <h3>lets us c++</h3>
+            <strong class="price">free</strong>
+            <label for="star">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-o"></span>
+                <span class="fa fa-star-o"></span></label>
+            <p>Lorem jeamsun denim lorem
+                jeansum.
+            </p>
+            <p><button><a href="/books/c++.pdf">view & download <i class="fa fa-download" aria-hidden="true"></i>
+                    </a></button></p>
+        </div>
+        <br>
+        <div class="border_line"></div>
+        <div class="card">
+            <img src="/images/background/bookimages/cg.jpg" alt="cg book " style="width:100%;height: 25vh;">
+            <h3>computer graphics</h3>
+            <strong class="price">free</strong>
+            <label for="star">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-o"></span>
+                <span class="fa fa-star-o"></span></label>
+            <p>Lorem jeamsun denim lorem
+                jeansum.
+            </p>
+            <p><button><a href="/books/cg.pdf">view & download <i class="fa fa-download" aria-hidden="true"></i>
+                    </a></button></p>
+        </div>
+
+    </div>
+    <br>
+    <div class="border_line"></div>
+    <div id="bookcontainer">
+        <div class="card">
+            <img src="/images/background/bookimages/cf.jpg" alt="cf book " style="width:100%;height: 25vh;">
+            <h3>computer fundamentals</h3>
+            <strong class="price">free</strong>
+            <label for="star">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-o"></span>
+                <span class="fa fa-star-o"></span></label>
+            <p> Lorem jeamsun denim lorem jeansum.
+            </p>
+            <p><button><a href="/books/cf.pdf">view & download <i class="fa fa-download" aria-hidden="true"></i>
+                    </a></button></p>
+        </div>
+        <br>
+        <div class="border_line"></div>
+        <div class="card">
+            <img src="/images/background/bookimages/cn.jpg" alt="comp net book" style="width:100%;height: 25vh;">
+            <h3>computer network</h3>
+            <strong class="price">free</strong>
+            <label for="star">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-half-o"></span>
+                <span class="fa fa-star-o"></span></label>
+            <p>Lorem jeamsun denim lorem jeansum.
+            </p>
+            <p><button><a href="/books/cn.pdf">view & download <i class="fa fa-download" aria-hidden="true"></i>
+                    </a></button></p>
+        </div>
+        <br>
+        <div class="border_line"></div>
+        <div class="card">
+            <img src="/images/background/bookimages/html.jpg" alt="web designing" style="width:100%;height: 25vh;">
+            <h3>web html css javascript</h3>
+            <strong class="price">free</strong>
+            <label for="star">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-o"></span>
+                <span class="fa fa-star-o"></span></label>
+            <p>Lorem jeamsun denim lorem
+                jeansum.
+            </p>
+            <p><button><a href="/books/html css.pdf">view & download <i class="fa fa-download" aria-hidden="true"></i>
+                    </a></button></p>
+        </div>
+        <br>
+        <div class="border_line"></div>
+        <div class="card">
+            <img src="/images/background/bookimages/qc.jpg" alt="quantum computer" style="width:100%;height: 25vh;">
+            <h3>Quantum computer</h3>
+            <strong class="price">free</strong>
+            <label for="star">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-o"></span>
+                <span class="fa fa-star-o"></span></label>
+            <p>Lorem jeamsun denim lorem
+                jeansum.
+            </p>
+            <p><button><a href="/books/qc.pdf">view & download <i class="fa fa-download" aria-hidden="true"></i>
+                    </a></button></p>
+        </div>
+        <br>
+        <div class="border_line"></div>
+        <div class="card">
+            <img src="/images/background/bookimages/sof eng.jpg" alt="soft engg book " style="width:100%;height: 25vh;">
+            <h3>software engineering</h3>
+            <strong class="price">free</strong>
+            <label for="star">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-o"></span>
+                <span class="fa fa-star-o"></span></label>
+            <p>Lorem jeamsun denim lorem
+                jeansum.
+            </p>
+            <p><button><a href="/books/soft eng.pdf">view & download <i class="fa fa-download" aria-hidden="true"></i>
+                    </a></button></p>
+        </div>
+    </div>
+    <!-- use the next prev arrow -->
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#1">1</a></li>
+            <li class="page-item"><a class="page-link" href="#2">2</a></li>
+            <li class="page-item"><a class="page-link" href="#3">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <!-- <div class="container">
+        <div style="background-image: url('/images/background/bookimages/ads.jpg');background-size: cover;" class="box">
+            <a href="/books/advance data structure.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+        </div>
+        <div style="background-image: url('/images/background/bookimages/c++.jpg');background-size: cover;" class="box">
+            <a href="/books/c++.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+        </div>
+        <div style="background-image: url('/images/background/bookimages/cg.jpg');background-size: cover;" class="box">
+            <a href="/books/cg.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+        </div>
+        <div style="background-image: url('/images/background/bookimages/dsa.jpg');background-size: cover;" class="box">
+            <a href="/books/dsa.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+        </div>
+        <div style="background-image: url('/images/background/bookimages/html.jpg');background-size: cover;"
+            class="box"><a href="/books/html css.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></div>
+    </div>
+    <div class="container">
+        <div style="background-image: url('/images/background/bookimages/c.jpg');background-size: cover;" class="box"><a
+                href="/books/c.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></div>
+        <div style="background-image: url('/images/background/bookimages/cf.jpg');background-size: cover;" class="box">
+            <a href="/books/cf.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+        </div>
+        <div style="background-image: url('/images/background/bookimages/cn.jpg');background-size: cover;" class="box">
+            <a href="/books/cn.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+        </div>
+        <div style="background-image: url('/images/background/bookimages/qc.jpg');background-size: cover;" class="box">
+            <a href="/books/qc.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+        </div>
+        <div style="background-image: url('/images/background/bookimages/sof\ eng.jpg');background-size: cover;"
+            class="box"><a href="/books/soft eng.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></div>
+
+    </div> -->
+    <!-- create a footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h6>About</h6>
+                    <p class="text-justify"><b style="color:rgb(243, 86, 149) ;"><strike>Munn@</strike></b> <i>CODE
+                            WANTS TO BE SIMPLE </i> is an initiative to help the upcoming programmers with the code.
+                        Munna focuses on providing the most efficient code or snippets as the code.</p>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Books</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">C,C++</a></li>
+                        <li><a href="#">Web design</a></li>
+                        <li><a href="#">PHP</a></li>
+                        <li><a href="#">Java</a></li>
+                        <li><a href="#">Computer Graphics</a></li>
+                        <li><a href="#">Computer Network</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">about</a></li>
+                        <li><a href="">Contribute</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Go to top</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">Copyright &copy; 2022-23 All Rights Reserved by
+                        <a style="color:rgb(243,46,149); text-decoration: none;" href="#my topnav">
+                            E-Lib Munn@</a>
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="https://www.facebook.com/profile.php?id=100072955008346"><i
+                                    class="fa fa-facebook"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="youtube" href="https://youtube.com/channel/UCBCOofXHKF8Fv79hlZwu0gg"><i
+                                    class="fa fa-youtube"></i></a></li>
+                        <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a class="instagram"
+                                href="https://www.instagram.com/invites/contact/?i=cra7j7kv26dr&utm_content=n0hdnmi"><i
+                                    class="fa fa-instagram"></i></a></li>
+                        <li><a class="whatsapp" href="https://wa.me/qr/QD62MR3OAY4QF1"><i
+                                    class="fa fa-whatsapp"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end a footer -->
+
+
+
+</body>
+
+</html>
